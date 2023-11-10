@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이 계산 프로그램</title>
+    <script>
+        /* 조건 : 현재 연도는 상수로 선언할 것 */
+        /* 나이 = 현재연도 - 태어난해 */
+        let b_year = parseInt(prompt("태어난 년도를 입력하세요: ", "2000"));
+        const YEAR = 2023;
+        let age;
+        // document.write(b_year+"년에 태어난 사람의 나이는 "+(YEAR-b_year+1)+"세 입니다.");
+        if(b_year == null){
+            document.write("입력이 취소되었습니다.");
+        }else if(isNaN(b_year)){
+            document.write("숫자를 입력해주세요");
+        }else{
+    
+            // 계산
+            age= YEAR - b_year;
+            document.write(b_year+"년에 태어난 사람의 나이는 "+(YEAR-b_year+1)+"세 입니다.");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
